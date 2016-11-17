@@ -1,6 +1,8 @@
 
 # cookiecutter-napalm-skeleton
 
+[![Build Status](https://travis-ci.org/napalm-automation/napalm-cookiecutter.svg?branch=master)](https://travis-ci.org/napalm-automation/napalm-cookiecutter)
+
 [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template for [napalm-skeleton](https://github.com/napalm-automation/napalm-skeleton).
 
 ## Usage
