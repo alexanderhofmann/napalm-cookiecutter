@@ -3,20 +3,12 @@
 SOURCE_REPO=napalm-automation/napalm-cookiecutter
 TARGET_REPO=napalm-automation/napalm-skeleton
 
-
 set -e
 set -x
 ls -al
 
 head_hash=$(git rev-parse --short --verify HEAD)
 repo_name=$(basename $TARGET_REPO)
-
-# decrypt key and add to agent
-ENCRYPTED_KEY_VAR="encrypted_${GH_KEY_TAG}_key"
-ENCRYPTED_IV_VAR="encrypted_${GH_KEY_TAG}_iv"
-ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
-ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-#openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in push_key.enc -out push_key -d
 
 chmod 600 push_key
 eval $(ssh-agent -s)
