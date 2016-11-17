@@ -33,7 +33,12 @@ mv ../../gen/.git .
 git config user.name "Travis CI"
 git config user.email "grizz@20c.com"
 git add .
-git commit -m "generated from $SOURCE_REPO@$head_hash"
 
+if test -n "`git status --porcelain`"; then
+	echo nothing to commit
+	exit 0
+fi
+
+git commit -m "generated from $SOURCE_REPO@$head_hash"
 git push origin master
 
