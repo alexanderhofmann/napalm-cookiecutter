@@ -1,0 +1,3 @@
+include requirements.txt
+include {{cookiecutter.module_name}}/templates/*.j2
+include {{cookiecutter.module_name}}/utils/textfsm_templates/*.tpl

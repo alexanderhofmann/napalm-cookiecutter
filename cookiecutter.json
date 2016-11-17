@@ -1,0 +1,12 @@
+{
+    "driver_name": "skeleton",
+    "capitalized_name": "{{cookiecutter.driver_name | capitalize}}",
+    "repo_name": "napalm-{{cookiecutter.driver_name | lower }}",
+    "package_name": "{{cookiecutter.repo_name}}",
+    "module_name": "{{cookiecutter.repo_name | replace('-', '_')}}",
+    "author": "David Barroso",
+    "author_email": "dbarrosop@dravetech.com",
+    "github_owner": "napalm-automation",
+    "short_description": "Network Automation and Programmability Abstraction Layer with Multivendor support",
+    "version": "0.1.0"
+}
