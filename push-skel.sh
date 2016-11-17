@@ -20,6 +20,7 @@ ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
 
 chmod 600 push_key
 eval $(ssh-agent -s)
+md5sum push_key
 ssh-add push_key
 
 # clone generated repo
