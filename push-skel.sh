@@ -34,7 +34,7 @@ git config user.name "Travis CI"
 git config user.email "grizz@20c.com"
 git add .
 
-if test -n "`git status --porcelain`"; then
+if test -z "`git status --porcelain`"; then
 	echo nothing to commit
 	exit 0
 fi
