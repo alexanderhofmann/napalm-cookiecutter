@@ -16,3 +16,5 @@ Run the command, fill out the blanks:
 cookiecutter cookiecutter-napalm-skeleton
 ```
 
+Example output is available at <https://github.com/napalm-automation/napalm-skeleton>
+
