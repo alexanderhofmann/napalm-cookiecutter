@@ -1,0 +1,8 @@
+
+language: python
+
+env:
+  global:
+    - GH_KEY_TAG: "ce5fc4a3b96c"
+
+script: bash ./push-skel.sh
