@@ -20,11 +20,11 @@ rm -rf gen
 git clone git@github.com:${TARGET_REPO}.git gen
 
 # create new generated repo
-rm -rf new_gen
-cookiecutter --no-input . -o new_gen -f
+rm -rf gen_new
+cookiecutter --no-input . -o gen_new -f
 
 # cookiecutter creates a base dir inside
-cd new_gen/*
+cd gen_new/*
 
 # grab git info
 mv ../../gen/.git .
