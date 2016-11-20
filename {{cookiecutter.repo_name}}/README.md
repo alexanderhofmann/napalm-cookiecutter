@@ -1,6 +1,8 @@
 [![PyPI](https://img.shields.io/pypi/v/{{cookiecutter.package_name}}.svg)](https://pypi.python.org/pypi/{{cookiecutter.package_name}})
 [![PyPI](https://img.shields.io/pypi/dm/{{cookiecutter.package_name}}.svg)](https://pypi.python.org/pypi/{{cookiecutter.package_name}})
 [![Build Status](https://travis-ci.org/{{cookiecutter.github_owner}}/{{cookiecutter.repo_name}}.svg?branch=master)](https://travis-ci.org/{{cookiecutter.github_owner}}/{{cookiecutter.repo_name}})
+[![Coverage Status](https://coveralls.io/repos/github/napalm-automation/napalm-{{cookiecutter.repo_name}}/badge.svg?branch=master)](https://coveralls.io/github/napalm-automation/napalm-{{cookiecutter.repo_name}})
+
 
 # {{cookiecutter.package_name}}
 
