@@ -16,5 +16,5 @@ script:
 
 after_success:
   - pwd
-  - bash cd ../../
+  - cd ../../
   - bash ./push-skel.sh
