@@ -15,7 +15,7 @@
 """
 Napalm driver for {{cookiecutter.capitalized_name}}.
 
-Read napalm.readthedocs.org for more information.
+Read https://napalm.readthedocs.io for more information.
 """
 
 from napalm_base.base import NetworkDriver
