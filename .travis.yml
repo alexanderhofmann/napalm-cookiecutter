@@ -10,6 +10,7 @@ before_install:
 script:
   - cookiecutter --no-input . -o gen_new -f
   - cd gen_new/napalm-skeleton
+  - pip install -r requirements-dev.txt
   - py.test
 
 after_success:
