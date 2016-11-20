@@ -31,6 +31,7 @@ class Patched{{cookiecutter.capitalized_name}}Driver({{cookiecutter.driver_name}
     """Patched {{cookiecutter.capitalized_name}} Driver."""
 
     def __init__(self, hostname, username, password, timeout=60, optional_args=None):
+        """Patched {{cookiecutter.capitalized_name}} Driver constructor."""
         super().__init__(hostname, username, password, timeout, optional_args)
 
         self.patched_attrs = ['device']

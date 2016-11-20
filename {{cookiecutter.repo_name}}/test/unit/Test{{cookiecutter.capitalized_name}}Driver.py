@@ -17,8 +17,7 @@
 import unittest
 
 from {{cookiecutter.module_name}} import {{cookiecutter.driver_name}}
-from napalm_base.test.base import TestConfigNetworkDriver, TestGettersNetworkDriver
-import json
+from napalm_base.test.base import TestConfigNetworkDriver
 
 
 class TestConfig{{cookiecutter.capitalized_name}}Driver(unittest.TestCase, TestConfigNetworkDriver):
@@ -39,4 +38,3 @@ class TestConfig{{cookiecutter.capitalized_name}}Driver(unittest.TestCase, TestC
 
         cls.device.load_replace_candidate(filename='%s/initial.conf' % cls.vendor)
         cls.device.commit_config()
-
