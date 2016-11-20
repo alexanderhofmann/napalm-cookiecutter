@@ -7,4 +7,10 @@ before_install:
   - python -m easy_install -U setuptools
   - pip install cookiecutter
 
-script: bash ./push-skel.sh
+script:
+  - cookiecutter --no-input . -o gen_new -f
+  - cd gen_new/napalm-skeleton
+  - py.test
+
+after_success:
+  - bash ./push-skel.sh
