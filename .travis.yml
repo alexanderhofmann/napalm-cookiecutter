@@ -14,5 +14,5 @@ script:
   - py.test
 
 after_success:
-  - bash cd $TRAVIS_BUILD_DIR
+  - bash cd ../../
   - bash ./push-skel.sh
