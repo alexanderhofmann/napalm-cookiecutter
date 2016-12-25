@@ -1,6 +1,9 @@
 
 language: python
 
+install:
+  - pip install coveralls
+
 before_install:
   - openssl aes-256-cbc -K $encrypted_ce5fc4a3b96c_key -iv $encrypted_ce5fc4a3b96c_iv -in push_key.enc -out push_key -d
   - python -m pip install -U pip
@@ -12,9 +15,10 @@ script:
   - cookiecutter --no-input . -o gen_new -f
   - cd gen_new/napalm-skeleton
   - pip install -r requirements-dev.txt
-  - py.test
+  - py.test --cov-report=
 
 after_success:
   - pwd
   - cd ../../
   - bash ./push-skel.sh
+  - coveralls
