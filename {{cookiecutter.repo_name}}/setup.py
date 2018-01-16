@@ -28,4 +28,5 @@ setup(
     url="https://github.com/{{cookiecutter.github_owner}}/{{cookiecutter.repo_name}}",
     include_package_data=True,
     install_requires=reqs,
+    zip_safe=False,
 )
